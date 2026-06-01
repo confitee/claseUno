@@ -1,0 +1,30 @@
+<section class="hero-container">
+    <h1>{{name()}}</h1>
+    
+    <table class="hero-table">
+        <tr>
+            <td>Nombre:</td>
+            <td> {{name()}} </td>
+        </tr>
+        <tr> 
+            <td>Edad:</td>
+            <td>{{age()}}</td> 
+        </tr>
+        <tr> 
+            <td>Método:</td> 
+            <td>{{getHeroDescription()}}</td> 
+        </tr>
+    </table>
+
+    <div class="button-group">
+        <button (click)="cambiarHero()">
+            Cambiar Nombre
+        </button>
+        <button (click)="cambiarEdad()">
+            Cambiar Edad
+        </button>
+        <button (click)="resetForm()" class="reset">
+            Reset
+        </button>
+    </div>
+</section>
